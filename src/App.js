@@ -61,13 +61,11 @@ const App = () => {
     );
   }
   function getClues() {
-    {
-      return currQuestion.clues.map((clue, index) => (
-        <div>
-          Clue{index + 1}: {clue}
-        </div>
-      ));
-    }
+    return currQuestion.clues.map((clue, index) => (
+      <div>
+        Clue{index + 1}: {clue}
+      </div>
+    ));
   }
 
   function handleOptionClick(e) {
